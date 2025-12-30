@@ -1,0 +1,7 @@
+path: C:/Users/noovelUser/Documents/YOLO/rebook/dataset
+
+train: images/train
+val: images/val
+
+names:
+  0: rebook
