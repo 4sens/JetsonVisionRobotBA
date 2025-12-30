@@ -11,7 +11,6 @@ model.train(
     name="reebok_shoe_v5",       
     project=r".\runs",  
 
-
     augment=True,
     fliplr=0.5,     # horizontal flip probability
     flipud=0.0,     # vertical flips (für Schuhe meist aus lassen)
