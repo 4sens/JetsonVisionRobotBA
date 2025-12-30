@@ -3,13 +3,13 @@ from ultralytics import YOLO
 model = YOLO("yolo11n.pt")
 
 model.train(
-    data=r"C:\Users\noovelUser\Documents\YOLO\rebook\dataset\data.yaml",
+    data=r".\dataset\data.yaml",
     epochs=600,
     imgsz=600,
     patience=100,
     batch=8,
     name="reebok_shoe_v5",       
-    project=r"C:\Users\noovelUser\Documents\YOLO\rebook\runs",  
+    project=r".\runs",  
 
 
     augment=True,
