@@ -10,7 +10,7 @@ while True:
         break
 
     r = model(frame, conf=0.3, iou=0.5, verbose=False)[0]  # conf höher, um FP zu drücken
-    WINDOW_NAME = "Shoe Detection"
+    WINDOW_NAME = "Reebok Detection"
     cv2.namedWindow(WINDOW_NAME, cv2.WINDOW_NORMAL)   # <-- wichtig!
     cv2.resizeWindow(WINDOW_NAME, 1024, 720)    
     cv2.imshow(WINDOW_NAME, r.plot())
