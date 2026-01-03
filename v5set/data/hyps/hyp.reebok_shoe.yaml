@@ -1,0 +1,41 @@
+# hyp.reebok_shoe.yaml (ported from your YOLO11 settings)
+
+# Learning rate / optimizer (defaults - keep unless you want to tune)
+lr0: 0.01
+lrf: 0.1
+momentum: 0.937
+weight_decay: 0.0005
+warmup_epochs: 3.0
+warmup_momentum: 0.8
+warmup_bias_lr: 0.1
+
+# Loss gains (defaults)
+box: 0.05
+cls: 0.5
+cls_pw: 1.0
+obj: 1.0
+obj_pw: 1.0
+iou_t: 0.20
+anchor_t: 4.0
+fl_gamma: 0.0
+
+# HSV augmentation (matches your hsv_h/s/v)
+hsv_h: 0.015
+hsv_s: 0.7
+hsv_v: 0.4
+
+# Geometric augmentation
+degrees: 30.0      # matches
+translate: 0.0     # you didn't set translate in v11; leaving 0.0 (set e.g. 0.1 if you want)
+scale: 0.50        # matches (jitter)
+shear: 0.0         # matches
+perspective: 0.0   # matches
+
+# Flip probabilities
+flipud: 0.0        # matches
+fliplr: 0.5        # matches
+
+# Mosaic/MixUp (YOLOv11 "augment=True" often implies these; enable if you want more robustness)
+mosaic: 1.0
+mixup: 0.0
+copy_paste: 0.0
